@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title></title>
+        
+               
+        <link rel="stylesheet" type="text/css" href="../static/style2.css"/>
+        
+       
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+                <div class="logo"> <h1 style="font-size: 40px; color: rgb(20, 128, 34);" > Stay  Home  Stay  Safe</h1> </div>
+                <div class="menu1" >
+                        <a href="{{ url_for('index') }}"  > <button class="btnone1" >Home</button> </a>
+                          <a href="{{ url_for('view') }}"  > <button class="btnone1" >View Set</button> </a>
+                        
+                </div>
+        </nav>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+
+        <div style="background-color: indigo; height: 80% ;width: 100%;">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h1 style="font-size: 50px;color: ivory; text-align: center;"> Hi User , {{msg}} </h1>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                {%if  data==1 %}
+
+                      <h1 style="font-size:50px;color: #b40909;text-align: center;">Your Covid Status  Is<b>Corona Positive</b></h1> 
+
+                {%else%}
+                      <h1 style="font-size:50px;color: #b40909;text-align: center;">Your Covid Status  Is <b>Corona Negative</b></h1> 
+                {%endif%}
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+       </div>
+</header>
+
+        
+
+</body>
+</html>

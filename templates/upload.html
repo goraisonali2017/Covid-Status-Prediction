@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+        <html>
+        <head>
+                <title></title>
+                <link rel="stylesheet" type="text/css" href="../static/style.css"/>
+           
+               
+        </head>
+        <body>
+            <header style="background-color:rgb(107, 104, 104) ;">
+                
+                <nav>
+                        <div class="logo"> <h1 style="font-size: 40px; color: rgb(20, 128, 34);" > Stay  Home  Stay  Safe</h1> </div>
+                        <div class="menu1" >
+                                <a href="{{ url_for('index') }}"  > <button class="btnone1" >Home</button> <a>
+                                
+                        </div>
+                </nav>
+            
+            <div align ="center">
+                <form action="{{url_for('inserted')}}" method="post">
+                
+                    <table border="2"  height="650px"   width="50%" >
+                        
+                        <tr>
+                            <th colspan="3"  style="font-size: 40px; color: rgb(234, 238, 234); background-color: black;">Ready To Check !!  </th>
+                        </tr>
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Name </th>
+                            <th><input type="text" name="name" id="name" placeholder="Enter your name"></th>
+                        </tr>
+        
+                        
+        
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Email Id</th>
+                            <th><input type="email" name="email" id="email" placeholder="Enter your email"></th>
+                        </tr>
+        
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Occupation</th>
+                            <th><input type="text" name="profession" id="profession" placeholder="Enter your profession"></th>
+                        </tr>
+        
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Your Age </th>
+                            <th><input type="number" name="age" id="age" placeholder="Enter your Age"></th>
+                        </tr>
+        
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Gender</th>
+                            <th> 
+                                <select   name="gender" id="gender" >
+                                    <option>Select Gende --</option>
+                                    <option value=0>Female</option>
+                                    <option value=1>Male</option>
+                                </select>
+        
+                            </th>
+                        </tr >
+                        <tr style="background-color: rgb(136, 208, 226);"> 
+                            <th>Blood Group</th>
+                            <th> 
+                                <select   name="blood_group" id="blood_group" >
+                                    <option>Select Blood  Group-- --</option>
+                                    <option value=4>A+</option>
+                                    <option value=2>A-</option>
+                                    <option value=6>B+</option>
+                                    <option value=1>B-</option>
+                                    <option value=7>O+</option>
+                                    <option value=3>O-</option>
+                                    <option value=5>AB+</option>
+                                    <option value=0>AB-</option>
+                                </select>
+        
+                            </th>
+                        </tr >
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Hypertension</th>
+                            <th> 
+                                <select   name="hypertension" id="hypertension" >
+                                    <option>Select Option --</option>
+                                    <option value=1>Yes</option>
+                                    <option value=0>No</option>
+                                </select>
+        
+                            </th>
+        
+                            <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Glucose Level</th>
+                            <th><input type="number" step="0.01" name="avg_glucose"  id="avg_glucose" placeholder="Enter value"></th>
+                        </tr>
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>BMI</th>
+                            <th><input type="number" step="0.01" name="bmi" id="bmi" placeholder="Enter value"></th>
+                        </tr>
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Smoking Status</th>
+                            <th> 
+                                <select   name="Smoking_status" id="Smoking_status" >
+                                    <option>Select Option --</option>
+                                    <option value=1>Yes</option>
+                                    <option value=0>No</option>
+                                </select>
+        
+                            </th>
+                        </tr>
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>PCR</th>
+                            <th> 
+                                <select   name="PCR" id="PCR" >
+                                    <option>Select Option --</option>
+                                    <option value=1>Yes</option>
+                                    <option value=0>No</option>
+                                </select>
+        
+                            </th>
+                            
+                        </tr>
+        
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>IFT</th>
+                            <th> 
+                                <select   name="IFT" id="IFT" >
+                                    <option>Select Option --</option>
+                                    <option value=1>Yes</option>
+                                    <option value=0>No</option>
+                                </select>
+        
+                            </th>
+                        </tr>
+        
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Asthma</th>
+                            <th> 
+                                <select   name="asthma" id="asthma" >
+                                    <option>Select Option --</option>
+                                    <option value=1>Yes</option>
+                                    <option value=0>No</option>
+                                </select>
+        
+                            </th>
+                        </tr>
+        
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Body temperature</th>
+                            <th><input type="number"  step="0.01" name="body_temp" id="body_temp" placeholder="Enter value"></th>
+                        </tr>
+        
+                        <tr style="background-color: rgb(136, 208, 226);">
+                            <th>Heart Disease</th>
+                            <th> 
+                                <select   name="heart" id="heart" >
+                                    <option>Select Option --</option>
+                                    <option value=1>Yes</option>
+                                    <option value=0>No</option>
+                                </select>
+        
+                            </th>
+                        </tr>
+                        <tr style="background-color:  rgb(14, 4, 4);">
+                            <th colspan ="4">
+                                <button class="btnone">Submit</button> 
+                                <button class="btnone">Reset</button> 
+                            </th> 
+                               
+        
+                            
+                        </tr>
+        
+                        
+                   
+        
+                    </table>
+                </form>
+                   
+                
+            </div>
+            </header>
+            
+            
+        </body>
+        </html>
